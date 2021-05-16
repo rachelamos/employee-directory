@@ -1,27 +1,13 @@
 import React from "react";
+import Wrapper from "./components/Wrapper";
+import Nav from "./components/Nav";
 
 function App() {
-  constructor(props){
-    super(props)
-    this.state = {
-      items: [],
-      loading: false
-    }
-  }
-
-  componentDidMount(){
-    fetch("https://randomuser.me/api/")
-    .then((response) => response.json())
-    .then((response) => {
-      this.setState({
-        items:response.results,
-        loading:true
-      })
-    }
-  }
-
   return (
-    <div>Hello world</div>
+    <div>
+    <Nav />
+    <Wrapper />
+    </div>
   );
 }
 
