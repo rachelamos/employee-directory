@@ -1,8 +1,11 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 
-function Wrapper(props) {
-  return <main className="wrapper">{props.children}</main>;
+class Wrapper extends React.Component {
+    state = {
+        result: {},
+        seach: ""
+    }
 }
 
 export default Wrapper;
