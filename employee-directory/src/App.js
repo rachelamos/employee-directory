@@ -1,12 +1,12 @@
 import React from "react";
-import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
+import SearchBox from "./components/SearchBox";
 
 function App() {
   return (
     <div>
     <Header />
-    <Wrapper />
+    <SearchBox />
     </div>
   );
 }
