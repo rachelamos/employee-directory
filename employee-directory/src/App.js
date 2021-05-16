@@ -1,11 +1,11 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-    <Nav />
+    <Header />
     <Wrapper />
     </div>
   );
