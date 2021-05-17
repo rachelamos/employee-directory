@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Header from "../Header";
+import SearchBox from "../SearchBox";
 import DataTable from "../DataTable";
 import DataBody from "../DataBody";
 import API from "../../utils/API";
@@ -22,10 +24,12 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <DataTable />
-                <DataBody>
-                    
-                </DataBody>
+                <Header />
+                <SearchBox />
+                <table class="table">
+                    <DataTable />
+                    <DataBody />
+                </table>
             </div>
         );
     }

@@ -4,7 +4,7 @@ function DataBody(props) {
     return (
         <div>
             <tbody>
-                {props.results.map(result => (
+                {props.results && props.results.map(result => (
                     <tr>
                         <td><img alt="thumbnail" src={result.picture.thumbnail}></img></td>
                         <td>{result.name.first} {result.name.last}</td>
