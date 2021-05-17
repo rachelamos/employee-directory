@@ -17,7 +17,7 @@ class Main extends Component {
 
     getEmployees = () => {
         API.search()
-        .then(res => this.setState({ results: res.data.data }))
+        .then(res => this.setState({ results: res.data.results }))
         .catch(err => console.log(err));
     };
 
@@ -28,7 +28,9 @@ class Main extends Component {
                 <SearchBox />
                 <table class="table">
                     <DataTable />
-                    <DataBody />
+                    <DataBody
+                        results={this.state.results}
+                    />
                 </table>
             </div>
         );
