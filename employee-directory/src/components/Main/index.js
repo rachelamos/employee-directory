@@ -21,11 +21,30 @@ class Main extends Component {
         .catch(err => console.log(err));
     };
 
+    handleInputChange = event => {
+        // Getting the value and name of the input which triggered the change
+        let value = event.target.value;
+        const results = this.state.results;
+        console.log(results)
+
+        const searchResults = results.filter((searchedName) => searchedName.name.first.includes(value))
+
+        // Updating the input's state
+        this.setState({
+            search: value,
+            // results: results
+            results: searchResults
+        })
+      };
+
     render() {
         return (
             <div>
                 <Header />
-                <SearchBox />
+                <SearchBox 
+                name = "search"
+                value = {this.state.search}
+                handleInputChange = {this.handleInputChange}/>
                 <table class="table">
                     <DataTable />
                     <DataBody
