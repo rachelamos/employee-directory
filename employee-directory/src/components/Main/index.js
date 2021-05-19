@@ -37,6 +37,22 @@ class Main extends Component {
         })
     };
 
+    handleSort = event => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        event.preventDefault();
+        console.log("hi")
+        const results = this.state.results;
+        console.log("these are my results", results)
+
+        const sortedResults = results.sort((a, b) =>
+            a.name.first.localeCompare(b.name.first));
+            // let nameB = b.name.first.toUpperCase();
+            
+        this.setState({
+            results: sortedResults
+        })
+    };
+
     render() {
         return (
             <div>
