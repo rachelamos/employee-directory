@@ -17,8 +17,8 @@ class Main extends Component {
 
     getEmployees = () => {
         API.search()
-        .then(res => this.setState({ results: res.data.results }))
-        .catch(err => console.log(err));
+            .then(res => this.setState({ results: res.data.results }))
+            .catch(err => console.log(err));
     };
 
     handleInputChange = event => {
@@ -35,18 +35,18 @@ class Main extends Component {
             // results: results
             results: searchResults
         })
-      };
+    };
 
     render() {
         return (
             <div>
                 <Header />
-                <SearchBox 
-                name = "search"
-                value = {this.state.search}
-                handleInputChange = {this.handleInputChange}/>
-                <table class="table">
-                    <DataTable />
+                <SearchBox
+                    name="search"
+                    value={this.state.search}
+                    handleInputChange={this.handleInputChange} />
+                <table class="table table-striped">
+                    <DataTable handleSort={this.handleSort}/>
                     <DataBody
                         results={this.state.results}
                     />

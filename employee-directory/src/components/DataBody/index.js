@@ -3,7 +3,6 @@ import Moment from 'react-moment';
 
 function DataBody(props) {
     return (
-        <div>
             <tbody>
                 {props.results && props.results.map(result => (
                     <tr key={result.index}>
@@ -15,7 +14,6 @@ function DataBody(props) {
                     </tr>
                 ))}
             </tbody>
-        </div>
     );
 }
 

@@ -3,7 +3,6 @@ import DataBody from "../DataBody";
 
 function DataTable(props) {
     return (
-        <div>
             <thead>
                 <tr>
                     <th scope="col">Image</th>
@@ -13,7 +12,6 @@ function DataTable(props) {
                     <th scope="col">DOB</th>
                 </tr>
             </thead>
-        </div>
     );
 }
 
