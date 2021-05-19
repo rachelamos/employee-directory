@@ -53,12 +53,14 @@ class Main extends Component {
                     name="search"
                     value={this.state.search}
                     handleInputChange={this.handleInputChange} />
+                <div className="container">
                 <table className="table table-striped">
                     <DataTable handleSort={this.handleSort} />
                     <DataBody
                         results={this.state.results}
                     />
                 </table>
+                </div>
             </div>
         );
     }
