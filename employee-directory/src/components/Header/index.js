@@ -3,8 +3,8 @@ import "./style.css";
 
 function Header() {
     return (
-        <div className="bg-light">
-            <div>Employee Directory</div>
+        <div className="bg-light header">
+            <h2>Employee Directory</h2>
         </div>
     );
 }
