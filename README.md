@@ -24,7 +24,7 @@ To install from GitHub, follow these steps:
 [Link to Application](https://github.com/rachelamos/employee-directory.git)
 
 ### Deployment to GitHub Pages
-[Link to GitHub Page]()
+[Link to GitHub Page](https://rachelamos.github.io/employee-directory/)
 
 ### Questions
 If you have any other questions, you can reach me:
